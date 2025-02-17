@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="dev.jpg" type="image/png">
+    <title>Dev Patel | Portfolio & Contacts</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        background: linear-gradient(45deg, #a8c0ff, #3f2b96, #ff758c);
+        background-size: 200% 200%;
+        animation: fogEffect 15s ease-in-out infinite;
+        color: white;
+      }
+      @keyframes fogEffect {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+      .container {
+        max-width: 900px;
+        margin: auto;
+      }
+      .card {
+        background: rgba(0, 0, 0, 0.9);
+        padding: 24px;
+        border-radius: 16px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        margin-bottom: 20px;
+      }
+      .card h2 {
+        font-size: 2rem;
+        margin-bottom: 12px;
+      }
+      .about {
+        margin-bottom: 20px;
+        color: #e0e0e0;
+      }
+      .links a {
+        display: inline-block;
+        margin: 8px;
+        padding: 10px 16px;
+        border-radius: 8px;
+        text-decoration: none;
+        background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045);
+        color: #fff;
+        transition: transform 0.3s ease;
+      }
+      .links a i {
+        margin-right: 8px;
+      }
+      .links a:hover {
+        transform: scale(1.05);
+      }
+
+      .projects-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+        gap: 16px;
+      }
+      .project-card {
+        background: rgba(0, 0, 0, 0.8);
+        padding: 16px;
+        border-radius: 12px;
+        text-align: center;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+        transition: transform 0.3s;
+      }
+      .project-card:hover {
+        transform: translateY(-5px);
+      }
+      .project-title {
+        font-size: 1.2rem;
+        margin-bottom: 8px;
+        color: #fcb045;
+      }
+      .project-desc {
+        font-size: 0.9rem;
+        margin-bottom: 12px;
+        color: #e0e0e0;
+      }
+      .project-link {
+        color: #fcb045;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      .contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+      }
+      .contact h3 {
+        font-size: 1.5rem;
+        margin-bottom: 8px;
+      }
+      .contact p {
+        font-size: 1rem;
+        margin-bottom: 8px;
+      }
+      .contact a {
+        color: #fcb045;
+        font-weight: bold;
+        text-decoration: none;
+        margin: 5px 0;
+      }
+      .connect-btn {
+        background-color: #fcb045;
+        color: #000000;
+        border: none;
+        padding: 12px 24px;
+        cursor: pointer;
+        font-size: 16px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+
+    .connect-btn:hover {
+        background-color: #fd1d1d;
+    }
+
+    .form-popup {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+        justify-content: center;
+        align-items: center;
+    }
+
+    .popup-content {
+        background-color: white;
+        border-radius: 10px;
+        padding: 20px;
+        position: relative;
+        width: 80%;
+        max-width: 800px;
+        height: auto;
+    }
+
+    .form-popup iframe {
+        width: 100%;
+        height: 600px;
+        border-radius: 10px;
+        background-color: ;
+    }
+
+    .form-popup .close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        color: white;
+        font-size: 30px;
+        cursor: pointer;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <h2 style="background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Dev Patel</h2>
+        <p class="about">Started my development journey by creating static clones of platforms like Amazon, Flipkart, Disney+ Hotstar, YouTube, and Spotify, enhancing my frontend skills. Built Chrome extensions, worked on API projects, and contributed to MeTUBE, MatchupX, and Travel Diaries. Currently applying my skills as an Fullstack developer intern at CarinaFashions, focusing on user-centric digital solutions.</p>
+      </div>
+
+      <div class="card">
+        <h2 style="background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">My Skills</h2>
+        <ul>
+          <li>HTML5, CSS3, JavaScript (ES6+)</li>
+          <li>JavaScript,c,c++,Python(basics)</li>
+          <li>React, Tailwind CSS, MUI</li>
+          <li>Node.js, Express.js, REST APIs</li>
+          <li>Firebase Authentication, MongoDB</li>
+          <li>Wireframing, Figma, Design Thinking</li>
+          <li>Git, GitHub, Vite</li>
+          <li>Payment-gateway Method integration</li>
+          <li>Problem Solving, Team Collaboration</li>
+
+        </ul>
+      </div>
+
+      <!-- Social Section -->
+      <div class="card">
+        <h2 style="background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Socials</h2>
+        <div class="links">
+          <a href="https://github.com/Dev2139" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+          <a href="https://www.linkedin.com/in/dev-patel2139/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+          <a href="https://x.com/Dev_Patel2139" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
+          <a href="https://www.instagram.com/dev_patel_2139/?hl=en" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+          <a href="https://drive.google.com/file/d/1MHA9AbofYsfZRLXfuJVbFpfRxJMpDmG7/view?usp=sharing" target="_blank"><i class="fas fa-file-alt"></i> Resume</a>
+
+        </div>
+      </div>
+
+      <!-- Projects Section -->
+      <div class="card">
+        <h2 style="background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Projects</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <h3 class="project-title">Stripe Payment Gateway (CarinaFashions)</h3>
+            <p class="project-desc">Secure payment integration using Stripe for CarinaFashions, enabling smooth and hassle-free transactions with a user-friendly checkout experience.</p>
+            <a href="https://carina-stripe-paymentgateway-integration.onrender.com/" target="_blank" class="project-link">Visit Project</a>
+            <span> | </span>
+            <a href="https://github.com/Dev2139/Carina-Stripe-PaymentGateway-Integration" target="_blank" class="project-link">View on GitHub</a>
+          </div>
+          
+
+          <div class="project-card">
+            <h3 class="project-title">MUI Integration POC (CarinaFashions)</h3>
+            <p class="project-desc">Proof of Concept (POC) showcasing the seamless integration of Material UI (MUI) components into CarinaFashions, enhancing the platform’s design consistency and user experience.</p>
+            <a href="https://carina-mui-integration.onrender.com/" target="_blank" class="project-link">Visit Project</a>
+            <span> | </span>
+            <a href="https://github.com/Dev2139/Carina-MUI-Integration" target="_blank" class="project-link">View on GitHub</a>
+          </div>
+          
+          
+          <div class="project-card">
+            <h3 class="project-title">API Hub</h3>
+            <p class="project-desc">Platform to explore, test, and integrate various APIs seamlessly</p>
+            <a href="https://api-hub-0jhw.onrender.com" target="_blank" class="project-link">Visit Project</a>
+            <span> | </span>
+            <a href="https://github.com/Dev2139/react-api-clone" target="_blank" class="project-link">View on GitHub</a>
+          </div>
+          
+
+          <div class="project-card">
+            <h3 class="project-title">Shiva Solar</h3>
+            <p class="project-desc">Website promoting solar energy adoption with product details and inquiries.</p>
+            <a href="https://shiva-solar.netlify.app/" target="_blank" class="project-link">Visit Project</a>
+            <span> | </span>
+            <a href="https://github.com/Dev2139/Shiva_Solar" target="_blank" class="project-link">View on GitHub</a>
+          </div>
+          
+
+          <div class="project-card">
+            <h3 class="project-title">Postman Docs</h3>
+            <p class="project-desc"> API documentation showcasing structured endpoints and testing via Postman.</p>
+            <a href="https://documenter.getpostman.com/view/39216487/2sAYQghTn7" target="_blank" class="project-link">View Docs</a>
+          </div>
+
+          <div class="project-card">
+            <h3 class="project-title">Cricket Team Auction Backend API</h3>
+            <p class="project-desc">Designed and built a RESTful API backend to manage player auctions, team budgets, and bidding processes.</p>
+            <a href="https://cricket-auction-l55y.onrender.com" target="_blank" class="project-link">View Live API</a>
+          </div>          
+
+          <div class="project-card">
+            <h3 class="project-title">Backend API model for Travel-Diaries</h3>
+            <p class="project-desc">RESTful API backend powering the Travel Diaries platform.</p>
+            <a href="https://travel-diaries-t6c5.onrender.com" target="_blank" class="project-link">View Live API</a>
+          </div>
+
+          <div class="project-card">
+            <h3 class="project-title">Chrome Extension: Social Media Blocker</h3>
+            <p class="project-desc">A productivity-focused Chrome extension that helps you block distracting social media sites, keeping you focused and in control of your time.</p>
+            <a href="https://github.com/Dev2139/SocialMedia-Blocker-Extension" target="_blank" class="project-link">View on GitHub</a>
+          </div>
+          
+          <div class="project-card">
+            <h3 class="project-title">Chrome Extension: YouTube Video Bookmark</h3>
+            <p class="project-desc">A handy Chrome extension that lets you bookmark specific timestamps on YouTube videos, making it easy to revisit important moments later.</p>
+            <a href="https://github.com/Dev2139/YTvideo-Bookmark-Extension" target="_blank" class="project-link">View on GitHub</a>
+          </div>          
+
+          <div class="project-card">
+            <h3 class="project-title">Chrome Extension: Chrome Activity Tracker</h3>
+            <p class="project-desc">A productivity-focused extension that tracks your browsing activity, helping you monitor time spent on different websites and improve your online habits.</p>
+            <a href="https://github.com/Dev2139/Activity-Tracker-Extension" target="_blank" class="project-link">View on GitHub</a>
+          </div>          
+
+          <div class="project-card">
+            <h3 class="project-title">Chrome Extension: Random Joke Generator</h3>
+            <p class="project-desc">A fun extension that delivers random jokes to brighten your day while browsing—because we all need a little laughter boost!</p>
+            <a href="https://github.com/Dev2139/Random-Joke-Extension" target="_blank" class="project-link">View on GitHub</a>
+          </div>          
+          
+          <div class="project-card">
+            <h3 class="project-title">Hotstar clone</h3>
+            <p class="project-desc">UI clone of Hotstar, built with React, focusing on streaming platform design.</p>
+            <a href="https://hotstar-by-devpatel.netlify.app/" target="_blank" class="project-link">Visit Project</a>
+          </div>
+
+          <div class="project-card">
+            <h3 class="project-title">Amazon clone</h3>
+            <p class="project-desc"> Frontend replica of Amazon, mimicking e-commerce functionalities.</p>
+            <a href="https://amazon-by-devpatel.netlify.app/" target="_blank" class="project-link">Visit Project</a>
+          </div>
+
+          <div class="project-card">
+            <h3 class="project-title">Flipkart clone</h3>
+            <p class="project-desc"> UI clone of Flipkart with an intuitive shopping interface.</p>
+            <a href="https://flip2139.netlify.app/" target="_blank" class="project-link">Visit Project</a>
+          </div>
+
+          <div class="project-card">
+            <h3 class="project-title">Netflix clone</h3>
+            <p class="project-desc">Streaming platform frontend replica resembling Netflix’s layout</p>
+            <a href="https://net2139.netlify.app/" target="_blank" class="project-link">Visit Project</a>
+          </div>
+
+          <div class="project-card">
+            <h3 class="project-title">Spotify clone</h3>
+            <p class="project-desc">Music streaming platform frontend inspired by Spotify.</p>
+            <a href="https://spotify2139.netlify.app/" target="_blank" class="project-link">Visit Project</a>
+          </div>
+
+          <div class="project-card">
+            <h3 class="project-title">2048 game</h3>
+            <p class="project-desc">Classic 2048 puzzle game built with vanilla JavaScript.</p>
+            <a href="https://2048-by-dev.netlify.app/" target="_blank" class="project-link">Visit Game</a>
+          </div>
+
+          <div class="project-card">
+            <h3 class="project-title">Fighting game</h3>
+            <p class="project-desc">Simple browser-based 2D fighting game with animations.</p>
+            <a href="https://fighting-game-by-dev.netlify.app/" target="_blank" class="project-link">Visit Game</a>
+          </div>
+
+          <div class="project-card">
+            <h3 class="project-title">Hangman game</h3>
+            <p class="project-desc">Word-guessing game with letter attempts and visuals.</p>
+            <a href="https://hangman2139.netlify.app/" target="_blank" class="project-link">Visit Game</a>
+          </div>
+
+          <div class="project-card">
+            <h3 class="project-title">Stone-Paper-Scissor game</h3>
+            <p class="project-desc"> Interactive Rock-Paper-Scissors game against AI.</p>
+            <a href="https://sps2139.netlify.app/" target="_blank" class="project-link">Visit Game</a>
+          </div>
+
+          <div class="project-card">
+            <h3 class="project-title">Tic-Tac-Toe game</h3>
+            <p class="project-desc">Classic Tic-Tac-Toe game for two players.</p>
+            <a href="https://xo2139.netlify.app/" target="_blank" class="project-link">Visit Game</a>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <h2 style="background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Figma Designs</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <h3 class="project-title">Figma Design for Carina Fashions</h3>
+            <p class="project-desc">Modern and user-friendly UI/UX design prototype for Carina Fashions as a part of internship journey, focusing on enhancing the online shopping experience.</p>
+            <a href="https://www.figma.com/design/AWgduCjaLH54UgJqF0gpGh/Carina-Fashion?t=EmvlKA7kfka8QSVq-0" target="_blank" class="project-link">View Design</a>
+          </div>
+
+          <div class="project-card">
+            <h3 class="project-title">Figma Design for Travel Diaries</h3>
+            <p class="project-desc">A comprehensive Figma design showcasing the user interface and experience for Travel Diaries, a platform to document and share travel experiences.</p>
+            <a href="https://www.figma.com/design/jheQXKCCha0dw4jVIDwjxu/Travel-Diaries?node-id=0-1&p=f&t=VkKmCfqvMWNsPLE3-0" target="_blank" class="project-link">View Design</a>
+          </div>          
+
+          <div class="project-card">
+            <h3 class="project-title">Figma Design for UrbanPulse</h3>
+            <p class="project-desc">A sleek and intuitive UI/UX design prototype for UrbanPulse, aiming to create a dynamic and engaging digital experience for users. This design enhances navigation and interaction across the platform.</p>
+            <a href="https://www.figma.com/design/2ynamSYhgcs7XWxASmQcaB/UrbanPulse?t=VkKmCfqvMWNsPLE3-0" target="_blank" class="project-link">View Design</a>
+          </div>          
+
+          <div class="project-card">
+            <h3 class="project-title">Figma Design for Codinggita</h3>
+            <p class="project-desc">A sleek, intuitive UI/UX design prototype for Codinggita, aimed at creating an engaging and seamless learning experience for users, with a focus on easy navigation, clear information presentation, and interactive elements for coding enthusiasts.</p>
+            <a href="https://www.figma.com/design/srWyAdnfp1p9uWjMcqTdDI/coding-gita-final?node-id=0-1&p=f&t=Em1QXZKXqsV1ZTrf-0" target="_blank" class="project-link">View Design</a>
+          </div>   
+          
+          <div class="project-card">
+            <h3 class="project-title">Figma Design for Instagram</h3>
+            <p class="project-desc">A modern and user-friendly UI/UX design prototype for Instagram, focused on enhancing the social media experience with clean visuals, intuitive navigation, and interactive features to engage users and promote seamless content sharing.</p>
+            <a href="https://www.figma.com/design/tMxp3ckKOGBP8r1kNrYP83/Untitled?node-id=0-1&p=f&t=3wTsGbtARGBDHtMO-0" target="_blank" class="project-link">View Design</a>
+          </div>          
+          
+        </div>
+
+      </div>
+
+
+      
+
+      <!-- Contact Section -->
+      <div class="card contact">
+        <h2 style="background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Reach Out</h2>
+        <h3>Email:<a href="mailto:dev.patel.codinggita@gmail.com">dev.patel.codinggita@gmail.com</a></h3>
+    
+        <!-- Connect with Me Button -->
+        <button class="connect-btn" onclick="openForm()">Connect with Me</button>
+    
+        <!-- Google Form iframe Popup (Hidden by default) -->
+        <div id="form-popup" class="form-popup">
+            <span class="close" onclick="closeForm()">×</span>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeWOQtorDdY-vsXSsBeWInpploh06-MbXjEW8lyjChwKqGXoA/viewform?embedded=true" width="640" height="719" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe></iframe>
+        </div>
+    </div>
+    </div>
+  </body>
+  <script>
+    function openForm() {
+        document.getElementById("form-popup").style.display = "flex";
+    }
+
+    function closeForm() {
+        document.getElementById("form-popup").style.display = "none";
+    }
+</script>
+</html>
+
