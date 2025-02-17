@@ -1,60 +1,160 @@
 body {
-    background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fad0c4, #fbc2eb, #a6c1ee);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
     margin: 0;
-    color: #ffffff;
-}
-.card {
-    background: rgba(0, 0, 0, 0.8);
-    padding: 25px 35px;
+    padding: 0;
+    height: 100vh;
+    background: linear-gradient(45deg, #a8c0ff, #3f2b96, #ff758c);
+    background-size: 200% 200%;
+    animation: fogEffect 15s ease-in-out infinite;
+    color: white;
+  }
+  @keyframes fogEffect {
+    0% {
+      background-position: 0% 0%;
+    }
+    50% {
+      background-position: 100% 100%;
+    }
+    100% {
+      background-position: 0% 0%;
+    }
+  }
+  .container {
+    max-width: 900px;
+    margin: auto;
+  }
+  .card {
+    background: rgba(0, 0, 0, 0.9);
+    padding: 24px;
     border-radius: 16px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
-    text-align: center;
-    max-width: 400px;
-}
-.profile-pic {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    object-fit: cover;
-    object-position: bottom; /* This will shift the image downward */
-    margin-bottom: 16px;
-}
-.card h2 {
-    margin-bottom: 8px;
-    font-size: 1.8rem;
-}
-.about {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
     margin-bottom: 20px;
-    color: #ddd;
-}
-.links a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    margin: 10px 0;
-    text-decoration: none;
-    color: #ffffff;
-    background-color: #6200ea;
-    padding: 10px;
+  }
+  .card h2 {
+    font-size: 2rem;
+    margin-bottom: 12px;
+  }
+  .about {
+    margin-bottom: 20px;
+    color: #e0e0e0;
+  }
+  .links a {
+    display: inline-block;
+    margin: 8px;
+    padding: 10px 16px;
     border-radius: 8px;
-    transition: background-color 0.3s, transform 0.2s ease;
-}
-.links a:hover {
-    background-color: #3700b3;
+    text-decoration: none;
+    background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045);
+    color: #fff;
+    transition: transform 0.3s ease;
+  }
+  .links a i {
+    margin-right: 8px;
+  }
+  .links a:hover {
     transform: scale(1.05);
+  }
+
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 16px;
+  }
+  .project-card {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 16px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s;
+  }
+  .project-card:hover {
+    transform: translateY(-5px);
+  }
+  .project-title {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    color: #fcb045;
+  }
+  .project-desc {
+    font-size: 0.9rem;
+    margin-bottom: 12px;
+    color: #e0e0e0;
+  }
+  .project-link {
+    color: #fcb045;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .contact h3 {
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+  }
+  .contact p {
+    font-size: 1rem;
+    margin-bottom: 8px;
+  }
+  .contact a {
+    color: #fcb045;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 5px 0;
+  }
+  .connect-btn {
+    background-color: #fcb045;
+    color: #000000;
+    border: none;
+    padding: 12px 24px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
-.social-link i {
-    font-size: 1.2em;
+
+.connect-btn:hover {
+    background-color: #fd1d1d;
 }
-.project-link {
-    background-color: #03dac6;
+
+.form-popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    justify-content: center;
+    align-items: center;
 }
-.project-link:hover {
-    background-color: #018786;
+
+.popup-content {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    height: auto;
+}
+
+.form-popup iframe {
+    width: 100%;
+    height: 600px;
+    border-radius: 10px;
+    background-color: ;
+}
+
+.form-popup .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
 }
